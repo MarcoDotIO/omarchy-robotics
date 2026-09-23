@@ -1,0 +1,211 @@
+{
+  "completed_utc": "2026-09-23T17:59:15.248311+00:00",
+  "domain": 59,
+  "environment": {
+    "AMENT_PREFIX_PATH": "/home/omarchy/ros2_lyrical/install",
+    "COLCON_PREFIX_PATH": "/home/omarchy/ros2_lyrical/install",
+    "RMW_IMPLEMENTATION": "rmw_fastrtps_cpp",
+    "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
+    "ROS_DISTRO": "lyrical",
+    "ROS_DOMAIN_ID": "59",
+    "ROS_VERSION": "2"
+  },
+  "install_prefix": "/home/omarchy/ros2_lyrical/install",
+  "machine": "aarch64",
+  "minimum_matching_messages": 5,
+  "os_release": "NAME=\"Arch Linux ARM\"\nPRETTY_NAME=\"Arch Linux ARM\"\nID=archarm\nID_LIKE=arch\nBUILD_ID=rolling\nANSI_COLOR=\"38;2;23;147;209\"\nHOME_URL=\"https://archlinuxarm.org/\"\nDOCUMENTATION_URL=\"https://archlinuxarm.org/wiki\"\nSUPPORT_URL=\"https://archlinuxarm.org/forum\"\nBUG_REPORT_URL=\"https://github.com/archlinuxarm/PKGBUILDs/issues\"\nLOGO=archlinux-logo\n",
+  "packages": {
+    "demo_nodes_cpp": {
+      "manifest_sha256": "ed41b5d08e49004befd0ba99e0079851c0de2e55f0a562c207398caa1ba4d7bd",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "0.37.9"
+    },
+    "demo_nodes_py": {
+      "manifest_sha256": "044339f5e198dcce2384f11ce37301b3d757c1661b446483be1591331abe7839",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "0.37.9"
+    },
+    "example_interfaces": {
+      "manifest_sha256": "7138325a79ffb569e816959961d3cb8b8d4f75c280082479d4005d20a2c6d4f8",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "0.14.1"
+    },
+    "rclcpp": {
+      "manifest_sha256": "99b9cde02e34e52f0ce853b29e1fbbf4ba80f76d78ca2f79a8652670ab9bb222",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "32.0.3"
+    },
+    "rclpy": {
+      "manifest_sha256": "a8cec9af7ba9f6bb638c0ce6c5dc6ff86d0273d1d26e22c217ab27be2a1b2a32",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "10.0.11"
+    },
+    "rmw": {
+      "manifest_sha256": "1a20ce9e9e7dfedb3043537192141388b7d232fd578c5382bf6460b19fe7c2c3",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "7.10.2"
+    },
+    "ros_environment": {
+      "manifest_sha256": "d8ac32a9ab50b621a79e7968b4571970f622de0fc5960bf1203cbe29d105419e",
+      "prefix": "/home/omarchy/ros2_lyrical/install",
+      "version": "4.5.1"
+    }
+  },
+  "pairs": [
+    {
+      "commands": [
+        [
+          "ros2",
+          "run",
+          "demo_nodes_py",
+          "listener",
+          "--ros-args",
+          "-r",
+          "__node:=proof_listener",
+          "-r",
+          "__ns:=/lyrical_proof_336d77a2996e/cpp_to_python"
+        ],
+        [
+          "ros2",
+          "run",
+          "demo_nodes_cpp",
+          "talker",
+          "--ros-args",
+          "-r",
+          "__node:=proof_talker",
+          "-r",
+          "__ns:=/lyrical_proof_336d77a2996e/cpp_to_python"
+        ]
+      ],
+      "direction": "cpp-to-python",
+      "graph": {
+        "nodes": [
+          {
+            "name": "proof_observer_336d77a2996e",
+            "namespace": "/"
+          },
+          {
+            "name": "proof_listener",
+            "namespace": "/lyrical_proof_336d77a2996e/cpp_to_python"
+          },
+          {
+            "name": "proof_talker",
+            "namespace": "/lyrical_proof_336d77a2996e/cpp_to_python"
+          }
+        ],
+        "publishers": [
+          {
+            "name": "proof_talker",
+            "namespace": "/lyrical_proof_336d77a2996e/cpp_to_python",
+            "type": "example_interfaces/msg/String"
+          }
+        ],
+        "subscribers": [
+          {
+            "name": "proof_observer_336d77a2996e",
+            "namespace": "/",
+            "type": "example_interfaces/msg/String"
+          },
+          {
+            "name": "proof_listener",
+            "namespace": "/lyrical_proof_336d77a2996e/cpp_to_python",
+            "type": "example_interfaces/msg/String"
+          }
+        ]
+      },
+      "matching_payloads": [
+        "Hello World: 1",
+        "Hello World: 2",
+        "Hello World: 3",
+        "Hello World: 4",
+        "Hello World: 5"
+      ],
+      "namespace": "/lyrical_proof_336d77a2996e/cpp_to_python",
+      "observer_received_count": 5,
+      "status": "PASS",
+      "topic": "/lyrical_proof_336d77a2996e/cpp_to_python/chatter",
+      "topic_type": "example_interfaces/msg/String"
+    },
+    {
+      "commands": [
+        [
+          "ros2",
+          "run",
+          "demo_nodes_cpp",
+          "listener",
+          "--ros-args",
+          "-r",
+          "__node:=proof_listener",
+          "-r",
+          "__ns:=/lyrical_proof_336d77a2996e/python_to_cpp"
+        ],
+        [
+          "ros2",
+          "run",
+          "demo_nodes_py",
+          "talker",
+          "--ros-args",
+          "-r",
+          "__node:=proof_talker",
+          "-r",
+          "__ns:=/lyrical_proof_336d77a2996e/python_to_cpp"
+        ]
+      ],
+      "direction": "python-to-cpp",
+      "graph": {
+        "nodes": [
+          {
+            "name": "proof_observer_336d77a2996e",
+            "namespace": "/"
+          },
+          {
+            "name": "proof_listener",
+            "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp"
+          },
+          {
+            "name": "proof_talker",
+            "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp"
+          }
+        ],
+        "publishers": [
+          {
+            "name": "proof_talker",
+            "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp",
+            "type": "example_interfaces/msg/String"
+          }
+        ],
+        "subscribers": [
+          {
+            "name": "proof_observer_336d77a2996e",
+            "namespace": "/",
+            "type": "example_interfaces/msg/String"
+          },
+          {
+            "name": "proof_listener",
+            "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp",
+            "type": "example_interfaces/msg/String"
+          }
+        ]
+      },
+      "matching_payloads": [
+        "Hello World: 0",
+        "Hello World: 1",
+        "Hello World: 2",
+        "Hello World: 3",
+        "Hello World: 4"
+      ],
+      "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp",
+      "observer_received_count": 5,
+      "status": "PASS",
+      "topic": "/lyrical_proof_336d77a2996e/python_to_cpp/chatter",
+      "topic_type": "example_interfaces/msg/String"
+    }
+  ],
+  "platform": "Linux-7.2.2-2-aarch64-ARCH-aarch64-with-glibc2.43",
+  "python": "3.14.7 (main, Aug 12 2026, 13:41:09) [GCC 16.1.1 20260430]",
+  "python_executable": "/home/omarchy/ros2_lyrical/.venv/bin/python3",
+  "rclpy_module": "/home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/rclpy/__init__.py",
+  "runtime_rmw": "rmw_fastrtps_cpp",
+  "started_utc": "2026-09-23T17:59:03.793137+00:00",
+  "status": "PASS"
+}

@@ -1,0 +1,26 @@
+ROS_NATIVE_INSTALL_CHECK
+2026-09-23T17:58:53+00:00
+Linux omarchy 7.2.2-2-aarch64-ARCH #1 SMP PREEMPT_DYNAMIC Sun Aug 30 15:38:24 UTC 2026 aarch64 GNU/Linux
+ROS_DISTRO=lyrical
+ROS_VERSION=2
+RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+IMPORT_OK rclpy /home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/rclpy/__init__.py
+IMPORT_OK launch /home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/launch/__init__.py
+IMPORT_OK launch_ros /home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/launch_ros/__init__.py
+IMPORT_OK rosbag2_py /home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/rosbag2_py/__init__.py
+IMPORT_OK tf2_ros /home/omarchy/ros2_lyrical/install/lib/python3.14/site-packages/tf2_ros/__init__.py
+IMPORT_OK PyKDL /home/omarchy/ros2_lyrical/dependencies/lib/python3.14/site-packages/PyKDL.cpython-314-aarch64-linux-gnu.so
+IMPORT_OK osrf_pycommon /home/omarchy/ros2_lyrical/.venv/lib/python3.14/site-packages/osrf_pycommon/__init__.py
+ROS_CLI_HELP_OK
+/home/omarchy/ros2_lyrical/install/lib/demo_nodes_cpp/talker: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=523f15f2561b653faef99cd29ff6496a0587b0e5, for GNU/Linux 3.7.0, not stripped
+ 0x0000000000000001 (NEEDED)             Shared library: [libsqlite3.so.0]
+#define HAVE_SQLITE3 1
+/home/omarchy/ros2_lyrical/build/fastdds/omarchy-system-sqlite/rtps/persistence/sqlite3.h
+/usr/include/sqlite3.h
+FASTDDS_SYSTEM_SQLITE_CHECK_OK
+84b086838dea2b1132064517a61017d30945f1d3
+revision=84b086838dea2b1132064517a61017d30945f1d3
+python=3.14
+prefix=/home/omarchy/ros2_lyrical/dependencies
+28e341a70c99f0623e72c76647d12ca078804a1f464ed9e1658e3859ac1654e0  /home/omarchy/Projects/ros2-lyrical-installer/install-ros2-lyrical.sh
+ROS_NATIVE_INSTALL_CHECK_PASS

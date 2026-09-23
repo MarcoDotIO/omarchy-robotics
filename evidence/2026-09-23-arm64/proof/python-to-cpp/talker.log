@@ -1,0 +1,6 @@
+[INFO] [1790186350.850942135] [lyrical_proof_336d77a2996e.python_to_cpp.proof_talker]: Publishing: "Hello World: 0"
+[INFO] [1790186351.831620323] [lyrical_proof_336d77a2996e.python_to_cpp.proof_talker]: Publishing: "Hello World: 1"
+[INFO] [1790186352.832327135] [lyrical_proof_336d77a2996e.python_to_cpp.proof_talker]: Publishing: "Hello World: 2"
+[INFO] [1790186353.832566864] [lyrical_proof_336d77a2996e.python_to_cpp.proof_talker]: Publishing: "Hello World: 3"
+[INFO] [1790186354.830755248] [lyrical_proof_336d77a2996e.python_to_cpp.proof_talker]: Publishing: "Hello World: 4"
+[ros2run]: Received signal:  Interrupt

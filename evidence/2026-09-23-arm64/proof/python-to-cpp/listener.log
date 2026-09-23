@@ -1,0 +1,8 @@
+[INFO] [1790186350.851798725] [lyrical_proof_336d77a2996e.python_to_cpp.proof_listener]: I heard: [Hello World: 0]
+[INFO] [1790186351.832520747] [lyrical_proof_336d77a2996e.python_to_cpp.proof_listener]: I heard: [Hello World: 1]
+[INFO] [1790186352.832878556] [lyrical_proof_336d77a2996e.python_to_cpp.proof_listener]: I heard: [Hello World: 2]
+[INFO] [1790186353.833436080] [lyrical_proof_336d77a2996e.python_to_cpp.proof_listener]: I heard: [Hello World: 3]
+[INFO] [1790186354.831751881] [lyrical_proof_336d77a2996e.python_to_cpp.proof_listener]: I heard: [Hello World: 4]
+[ros2run]: Received signal:  Interrupt
+[INFO] [1790186355.065549309] [rclcpp]: signal_handler(signum=2)
+[INFO] [1790186355.066397649] [rclcpp]: signal_handler(signum=2)

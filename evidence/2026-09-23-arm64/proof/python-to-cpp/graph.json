@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "name": "proof_observer_336d77a2996e",
+      "namespace": "/"
+    },
+    {
+      "name": "proof_listener",
+      "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp"
+    },
+    {
+      "name": "proof_talker",
+      "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp"
+    }
+  ],
+  "publishers": [
+    {
+      "name": "proof_talker",
+      "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp",
+      "type": "example_interfaces/msg/String"
+    }
+  ],
+  "subscribers": [
+    {
+      "name": "proof_observer_336d77a2996e",
+      "namespace": "/",
+      "type": "example_interfaces/msg/String"
+    },
+    {
+      "name": "proof_listener",
+      "namespace": "/lyrical_proof_336d77a2996e/python_to_cpp",
+      "type": "example_interfaces/msg/String"
+    }
+  ]
+}

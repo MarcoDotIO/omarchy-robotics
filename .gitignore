@@ -1,0 +1,40 @@
+# Local ROS workspaces and generated builds
+/ros2_lyrical/
+/build/
+/install/
+/log/
+/logs/
+/src/
+/dependency-src/
+/dependency-build/
+/dependencies/
+/.venv/
+/venv/
+/new-proof/
+/lyrical-proof/
+/ros2-lyrical-proof-*/
+
+# VM images and local access material
+*.pvm/
+*.pvs
+*.hdd/
+*.qcow2
+*.img
+*.iso
+*.vdi
+*.vmdk
+*.zip
+*.tar.gz
+.env
+.env.*
+*.pem
+*.key
+*-access.md
+
+# Editor and interpreter output; committed evidence/*.log is intentional
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/

@@ -1,0 +1,4 @@
+Log: installer-20260923T175355Z.log
+Summary: 225 packages finished [3min 15s]
+  17 packages had stderr output: geometry2 ros2cli_common_extensions ros_base ros_core rosbag2 rosbag2_compression rosbag2_compression_zstd rosbag2_cpp rosbag2_py rosbag2_storage_default_plugins rosbag2_tests rosbag2_transport sros2_cmake tf2_eigen tf2_geometry_msgs tf2_kdl tf2_sensor_msgs
+BUILD COMPLETE. In a fresh shell:

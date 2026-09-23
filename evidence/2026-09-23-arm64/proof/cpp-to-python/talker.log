@@ -1,0 +1,8 @@
+[INFO] [1790186345.080674300] [lyrical_proof_336d77a2996e.cpp_to_python.proof_talker]: Publishing: 'Hello World: 1'
+[INFO] [1790186346.080512492] [lyrical_proof_336d77a2996e.cpp_to_python.proof_talker]: Publishing: 'Hello World: 2'
+[INFO] [1790186347.080317271] [lyrical_proof_336d77a2996e.cpp_to_python.proof_talker]: Publishing: 'Hello World: 3'
+[INFO] [1790186348.080565892] [lyrical_proof_336d77a2996e.cpp_to_python.proof_talker]: Publishing: 'Hello World: 4'
+[INFO] [1790186349.080524431] [lyrical_proof_336d77a2996e.cpp_to_python.proof_talker]: Publishing: 'Hello World: 5'
+[ros2run]: Received signal:  [INFO] [1790186349.083686373] [rclcpp]: signal_handler(signum=2)
+Interrupt
+[INFO] [1790186349.085120927] [rclcpp]: signal_handler(signum=2)
